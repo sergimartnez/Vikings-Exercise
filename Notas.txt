@@ -1,0 +1,32 @@
+1) Herencia para guerreos --> clase Warrior (vida y fuerza) - y atacan y reciben daño
+	- En el contructor de viking --> Warrior.call(this, maxStrength, maxHealth)
+	- También ponemos: this.name=name (ya que esto es propio de cada Viking)
+
+	depues fuera de la clase se pone
+
+	Viking.prototype = Object.create(Warrior.prototype);
+	Viking.prototype.contructor = Viking;
+
+2) Herencia para la batalla
+
+3) Poner las funciones fuera de las clases
+
+	Warrior.prototype.attach...
+	Warrior.prototype._calculateRandom
+
+4) Random --> See #3
+
+5) Clase pit --> var pit = function ()
+	- Visitor
+	- Local
+	- Number of round
+
+	Pit.prototype.fight = function (){
+		while(this._fightContinues)
+	}
+
+6) Clase assault --> enfrentamiento entre 2 luchadores
+
+7) Clase war --> tiene startWar
+
+8) Para el tema de las muertes hacer un "filter" sobre el array de los luchadores quedandome con los que tenga vida < 0
